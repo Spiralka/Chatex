@@ -1,0 +1,795 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF33B91621B3C0E200D674CD /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF33B91521B3C0E200D674CD /* Protocols.swift */; };
+		CF33B91921B3C31F00D674CD /* Peer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF33B91721B3C31F00D674CD /* Peer+CoreDataClass.swift */; };
+		CF33B91A21B3C31F00D674CD /* Peer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF33B91821B3C31F00D674CD /* Peer+CoreDataProperties.swift */; };
+		CF33B91D21B3C3F400D674CD /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF33B91B21B3C3F400D674CD /* Message.swift */; };
+		CF33B91E21B3C3F400D674CD /* Message+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF33B91C21B3C3F400D674CD /* Message+CoreDataProperties.swift */; };
+		CF33B92221B3C55C00D674CD /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF33B92021B3C55C00D674CD /* Conversation.swift */; };
+		CF33B92321B3C55C00D674CD /* Conversation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF33B92121B3C55C00D674CD /* Conversation+CoreDataProperties.swift */; };
+		CF33B92621B4514900D674CD /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF33B92521B4514900D674CD /* Animator.swift */; };
+		CF49C46B21BD55EA007E6B7B /* doOrGoToPyaterochkaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF49C46A21BD55EA007E6B7B /* doOrGoToPyaterochkaTests.swift */; };
+		CF49C47521BD565C007E6B7B /* ImageLoaderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF49C47421BD565C007E6B7B /* ImageLoaderTest.swift */; };
+		CF49C47721BD5798007E6B7B /* NetworkManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF49C47621BD5798007E6B7B /* NetworkManagerMock.swift */; };
+		CF49C47921BD57A3007E6B7B /* ImageLoaderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF49C47821BD57A3007E6B7B /* ImageLoaderMock.swift */; };
+		CF6F031721A1FB400056137D /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F031621A1FB400056137D /* CoreDataStack.swift */; };
+		CF6F031921A1FBD10056137D /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F031821A1FBD10056137D /* CoreDataManager.swift */; };
+		CF6F031C21A1FD0B0056137D /* MultipeerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F031B21A1FD0B0056137D /* MultipeerManager.swift */; };
+		CF6F031E21A1FD1C0056137D /* CommunicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F031D21A1FD1C0056137D /* CommunicationService.swift */; };
+		CF6F032D21A35A520056137D /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF6F032B21A35A520056137D /* CoreDataModel.xcdatamodeld */; };
+		CF6F033021A35C6F0056137D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F032E21A35C6F0056137D /* Profile.swift */; };
+		CF6F033121A35C6F0056137D /* Profile+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F032F21A35C6F0056137D /* Profile+CoreDataProperties.swift */; };
+		CF992D43219E0DD000E96ECB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF992D42219E0DD000E96ECB /* AppDelegate.swift */; };
+		CF992D45219E0DD000E96ECB /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF992D44219E0DD000E96ECB /* ProfileController.swift */; };
+		CF992D48219E0DD000E96ECB /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF992D46219E0DD000E96ECB /* Profile.storyboard */; };
+		CF992D4A219E0DD100E96ECB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF992D49219E0DD100E96ECB /* Assets.xcassets */; };
+		CF992D4D219E0DD100E96ECB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF992D4B219E0DD100E96ECB /* LaunchScreen.storyboard */; };
+		CF992D5821A0BB6400E96ECB /* Conversations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF992D5721A0BB6400E96ECB /* Conversations.storyboard */; };
+		CF992D5A21A0BB8500E96ECB /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF992D5921A0BB8500E96ECB /* ConversationsController.swift */; };
+		CF992D5E21A0BF9600E96ECB /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF992D5C21A0BF9600E96ECB /* ConversationCell.swift */; };
+		CF992D5F21A0BF9600E96ECB /* ConversationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF992D5D21A0BF9600E96ECB /* ConversationCell.xib */; };
+		CF992D6121A1CB8900E96ECB /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF992D6021A1CB8900E96ECB /* UIView+Ext.swift */; };
+		CF992D6321A1DCBC00E96ECB /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF992D6221A1DCBC00E96ECB /* Chat.storyboard */; };
+		CF992D6521A1DD3200E96ECB /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF992D6421A1DD3200E96ECB /* ChatController.swift */; };
+		CF992D6921A1E61E00E96ECB /* InputMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF992D6721A1E61E00E96ECB /* InputMessageCell.swift */; };
+		CF992D6A21A1E61E00E96ECB /* InputMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF992D6821A1E61E00E96ECB /* InputMessageCell.xib */; };
+		CFBBAA8221AAD986002BD2FB /* PhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBBAA8121AAD986002BD2FB /* PhotoController.swift */; };
+		CFBBAA8421AAE452002BD2FB /* PhotoNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBBAA8321AAE452002BD2FB /* PhotoNetwork.swift */; };
+		CFBBAA8621AAF533002BD2FB /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBBAA8521AAF533002BD2FB /* PhotoModel.swift */; };
+		CFBBAA8821AAF5E5002BD2FB /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBBAA8721AAF5E5002BD2FB /* UIImageView+Ext.swift */; };
+		CFBBAA8A21AAF63B002BD2FB /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBBAA8921AAF63B002BD2FB /* PhotoCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF49C46D21BD55EA007E6B7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF992D37219E0DD000E96ECB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF992D3E219E0DD000E96ECB;
+			remoteInfo = doOrGoToPyaterochka;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF33B91521B3C0E200D674CD /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		CF33B91721B3C31F00D674CD /* Peer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Peer+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CF33B91821B3C31F00D674CD /* Peer+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Peer+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CF33B91B21B3C3F400D674CD /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		CF33B91C21B3C3F400D674CD /* Message+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Message+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CF33B92021B3C55C00D674CD /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
+		CF33B92121B3C55C00D674CD /* Conversation+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Conversation+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CF33B92521B4514900D674CD /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		CF49C46821BD55E9007E6B7B /* ChatexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF49C46A21BD55EA007E6B7B /* doOrGoToPyaterochkaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = doOrGoToPyaterochkaTests.swift; sourceTree = "<group>"; };
+		CF49C46C21BD55EA007E6B7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF49C47421BD565C007E6B7B /* ImageLoaderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderTest.swift; sourceTree = "<group>"; };
+		CF49C47621BD5798007E6B7B /* NetworkManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerMock.swift; sourceTree = "<group>"; };
+		CF49C47821BD57A3007E6B7B /* ImageLoaderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderMock.swift; sourceTree = "<group>"; };
+		CF6F031621A1FB400056137D /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		CF6F031821A1FBD10056137D /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		CF6F031B21A1FD0B0056137D /* MultipeerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerManager.swift; sourceTree = "<group>"; };
+		CF6F031D21A1FD1C0056137D /* CommunicationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationService.swift; sourceTree = "<group>"; };
+		CF6F032C21A35A520056137D /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		CF6F032E21A35C6F0056137D /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		CF6F032F21A35C6F0056137D /* Profile+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CF992D3F219E0DD000E96ECB /* Chatex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chatex.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF992D42219E0DD000E96ECB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF992D44219E0DD000E96ECB /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		CF992D47219E0DD000E96ECB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
+		CF992D49219E0DD100E96ECB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF992D4C219E0DD100E96ECB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF992D4E219E0DD100E96ECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF992D5721A0BB6400E96ECB /* Conversations.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Conversations.storyboard; sourceTree = "<group>"; };
+		CF992D5921A0BB8500E96ECB /* ConversationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsController.swift; sourceTree = "<group>"; };
+		CF992D5C21A0BF9600E96ECB /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
+		CF992D5D21A0BF9600E96ECB /* ConversationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConversationCell.xib; sourceTree = "<group>"; };
+		CF992D6021A1CB8900E96ECB /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		CF992D6221A1DCBC00E96ECB /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
+		CF992D6421A1DD3200E96ECB /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
+		CF992D6721A1E61E00E96ECB /* InputMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputMessageCell.swift; sourceTree = "<group>"; };
+		CF992D6821A1E61E00E96ECB /* InputMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputMessageCell.xib; sourceTree = "<group>"; };
+		CFBBAA8121AAD986002BD2FB /* PhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoController.swift; sourceTree = "<group>"; };
+		CFBBAA8321AAE452002BD2FB /* PhotoNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoNetwork.swift; sourceTree = "<group>"; };
+		CFBBAA8521AAF533002BD2FB /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		CFBBAA8721AAF5E5002BD2FB /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
+		CFBBAA8921AAF63B002BD2FB /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF49C46521BD55E9007E6B7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF992D3C219E0DD000E96ECB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF33B91F21B3C40900D674CD /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				CF33B91B21B3C3F400D674CD /* Message.swift */,
+				CF33B91C21B3C3F400D674CD /* Message+CoreDataProperties.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		CF33B92421B3C56B00D674CD /* Conversation */ = {
+			isa = PBXGroup;
+			children = (
+				CF33B92021B3C55C00D674CD /* Conversation.swift */,
+				CF33B92121B3C55C00D674CD /* Conversation+CoreDataProperties.swift */,
+			);
+			path = Conversation;
+			sourceTree = "<group>";
+		};
+		CF49C46921BD55EA007E6B7B /* ChatexTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF49C46A21BD55EA007E6B7B /* doOrGoToPyaterochkaTests.swift */,
+				CF49C46C21BD55EA007E6B7B /* Info.plist */,
+				CF49C47421BD565C007E6B7B /* ImageLoaderTest.swift */,
+				CF49C47621BD5798007E6B7B /* NetworkManagerMock.swift */,
+				CF49C47821BD57A3007E6B7B /* ImageLoaderMock.swift */,
+			);
+			path = ChatexTests;
+			sourceTree = "<group>";
+		};
+		CF6F031121A1F9DE0056137D /* 1. PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				CF6F031421A1FAA00056137D /* ApplicationsViewContrller */,
+			);
+			path = "1. PresentationLayer";
+			sourceTree = "<group>";
+		};
+		CF6F031221A1F9EF0056137D /* 2. ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				CF33B92421B3C56B00D674CD /* Conversation */,
+				CF33B91F21B3C40900D674CD /* Message */,
+				CF6F032121A1FE800056137D /* Peer */,
+			);
+			path = "2. ServiceLayer";
+			sourceTree = "<group>";
+		};
+		CF6F031321A1F9FA0056137D /* 3. CoreLayer */ = {
+			isa = PBXGroup;
+			children = (
+				CFBBAA8B21AB23A4002BD2FB /* PhotoNetworkManager */,
+				CF6F031A21A1FCE60056137D /* MultipeerManager */,
+				CF6F031521A1FAF90056137D /* CoreDataStorage */,
+				CF33B92521B4514900D674CD /* Animator.swift */,
+			);
+			path = "3. CoreLayer";
+			sourceTree = "<group>";
+		};
+		CF6F031421A1FAA00056137D /* ApplicationsViewContrller */ = {
+			isa = PBXGroup;
+			children = (
+				CF992D5621A0B68F00E96ECB /* Profile */,
+				CF992D5B21A0BB8F00E96ECB /* Conversations */,
+				CF992D6621A1DD3900E96ECB /* Chat */,
+			);
+			path = ApplicationsViewContrller;
+			sourceTree = "<group>";
+		};
+		CF6F031521A1FAF90056137D /* CoreDataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				CF6F031621A1FB400056137D /* CoreDataStack.swift */,
+				CF6F031821A1FBD10056137D /* CoreDataManager.swift */,
+				CF6F032B21A35A520056137D /* CoreDataModel.xcdatamodeld */,
+			);
+			path = CoreDataStorage;
+			sourceTree = "<group>";
+		};
+		CF6F031A21A1FCE60056137D /* MultipeerManager */ = {
+			isa = PBXGroup;
+			children = (
+				CF6F031D21A1FD1C0056137D /* CommunicationService.swift */,
+				CF6F031B21A1FD0B0056137D /* MultipeerManager.swift */,
+			);
+			path = MultipeerManager;
+			sourceTree = "<group>";
+		};
+		CF6F032121A1FE800056137D /* Peer */ = {
+			isa = PBXGroup;
+			children = (
+				CF33B91721B3C31F00D674CD /* Peer+CoreDataClass.swift */,
+				CF33B91821B3C31F00D674CD /* Peer+CoreDataProperties.swift */,
+			);
+			path = Peer;
+			sourceTree = "<group>";
+		};
+		CF6F032221A1FF520056137D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF992D46219E0DD000E96ECB /* Profile.storyboard */,
+				CFBBAA8921AAF63B002BD2FB /* PhotoCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF6F032321A1FF900056137D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF6F032E21A35C6F0056137D /* Profile.swift */,
+				CF6F032F21A35C6F0056137D /* Profile+CoreDataProperties.swift */,
+				CFBBAA8521AAF533002BD2FB /* PhotoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF6F032421A1FF950056137D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CF992D44219E0DD000E96ECB /* ProfileController.swift */,
+				CFBBAA8121AAD986002BD2FB /* PhotoController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CF6F032521A1FFC40056137D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF992D5721A0BB6400E96ECB /* Conversations.storyboard */,
+				CF992D5C21A0BF9600E96ECB /* ConversationCell.swift */,
+				CF992D5D21A0BF9600E96ECB /* ConversationCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF6F032621A1FFCC0056137D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CF992D5921A0BB8500E96ECB /* ConversationsController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CF6F032721A1FFD80056137D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF6F032821A1FFF50056137D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF992D6221A1DCBC00E96ECB /* Chat.storyboard */,
+				CF992D6721A1E61E00E96ECB /* InputMessageCell.swift */,
+				CF992D6821A1E61E00E96ECB /* InputMessageCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF6F032921A1FFFB0056137D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CF992D6421A1DD3200E96ECB /* ChatController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CF6F032A21A200030056137D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF992D36219E0DD000E96ECB = {
+			isa = PBXGroup;
+			children = (
+				CF992D41219E0DD000E96ECB /* Chatex */,
+				CF49C46921BD55EA007E6B7B /* ChatexTests */,
+				CF992D40219E0DD000E96ECB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF992D40219E0DD000E96ECB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF992D3F219E0DD000E96ECB /* Chatex.app */,
+				CF49C46821BD55E9007E6B7B /* ChatexTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF992D41219E0DD000E96ECB /* Chatex */ = {
+			isa = PBXGroup;
+			children = (
+				CF6F031121A1F9DE0056137D /* 1. PresentationLayer */,
+				CF6F031221A1F9EF0056137D /* 2. ServiceLayer */,
+				CF6F031321A1F9FA0056137D /* 3. CoreLayer */,
+				CF992D42219E0DD000E96ECB /* AppDelegate.swift */,
+				CF992D6B21A1F89E00E96ECB /* Supporting Files */,
+			);
+			path = Chatex;
+			sourceTree = "<group>";
+		};
+		CF992D5621A0B68F00E96ECB /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				CF6F032321A1FF900056137D /* Model */,
+				CF6F032221A1FF520056137D /* View */,
+				CF6F032421A1FF950056137D /* Controller */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		CF992D5B21A0BB8F00E96ECB /* Conversations */ = {
+			isa = PBXGroup;
+			children = (
+				CF6F032721A1FFD80056137D /* Model */,
+				CF6F032521A1FFC40056137D /* View */,
+				CF6F032621A1FFCC0056137D /* Controller */,
+			);
+			path = Conversations;
+			sourceTree = "<group>";
+		};
+		CF992D6621A1DD3900E96ECB /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				CF6F032A21A200030056137D /* Model */,
+				CF6F032821A1FFF50056137D /* View */,
+				CF6F032921A1FFFB0056137D /* Controller */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		CF992D6B21A1F89E00E96ECB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF992D49219E0DD100E96ECB /* Assets.xcassets */,
+				CF992D6021A1CB8900E96ECB /* UIView+Ext.swift */,
+				CF992D4B219E0DD100E96ECB /* LaunchScreen.storyboard */,
+				CF992D4E219E0DD100E96ECB /* Info.plist */,
+				CFBBAA8721AAF5E5002BD2FB /* UIImageView+Ext.swift */,
+				CF33B91521B3C0E200D674CD /* Protocols.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CFBBAA8B21AB23A4002BD2FB /* PhotoNetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				CFBBAA8321AAE452002BD2FB /* PhotoNetwork.swift */,
+			);
+			path = PhotoNetworkManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF49C46721BD55E9007E6B7B /* ChatexTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF49C47121BD55EA007E6B7B /* Build configuration list for PBXNativeTarget "ChatexTests" */;
+			buildPhases = (
+				CF49C46421BD55E9007E6B7B /* Sources */,
+				CF49C46521BD55E9007E6B7B /* Frameworks */,
+				CF49C46621BD55E9007E6B7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF49C46E21BD55EA007E6B7B /* PBXTargetDependency */,
+			);
+			name = ChatexTests;
+			productName = doOrGoToPyaterochkaTests;
+			productReference = CF49C46821BD55E9007E6B7B /* ChatexTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CF992D3E219E0DD000E96ECB /* Chatex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF992D51219E0DD100E96ECB /* Build configuration list for PBXNativeTarget "Chatex" */;
+			buildPhases = (
+				CF992D3B219E0DD000E96ECB /* Sources */,
+				CF992D3C219E0DD000E96ECB /* Frameworks */,
+				CF992D3D219E0DD000E96ECB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chatex;
+			productName = doOrGoToPyaterochka;
+			productReference = CF992D3F219E0DD000E96ECB /* Chatex.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF992D37219E0DD000E96ECB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "LosAnatoly Inc.";
+				TargetAttributes = {
+					CF49C46721BD55E9007E6B7B = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = CF992D3E219E0DD000E96ECB;
+					};
+					CF992D3E219E0DD000E96ECB = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = CF992D3A219E0DD000E96ECB /* Build configuration list for PBXProject "Chatex" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF992D36219E0DD000E96ECB;
+			productRefGroup = CF992D40219E0DD000E96ECB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF992D3E219E0DD000E96ECB /* Chatex */,
+				CF49C46721BD55E9007E6B7B /* ChatexTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF49C46621BD55E9007E6B7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF992D3D219E0DD000E96ECB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF992D6321A1DCBC00E96ECB /* Chat.storyboard in Resources */,
+				CF992D4D219E0DD100E96ECB /* LaunchScreen.storyboard in Resources */,
+				CF992D5821A0BB6400E96ECB /* Conversations.storyboard in Resources */,
+				CF992D4A219E0DD100E96ECB /* Assets.xcassets in Resources */,
+				CF992D48219E0DD000E96ECB /* Profile.storyboard in Resources */,
+				CF992D6A21A1E61E00E96ECB /* InputMessageCell.xib in Resources */,
+				CF992D5F21A0BF9600E96ECB /* ConversationCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF49C46421BD55E9007E6B7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF49C47921BD57A3007E6B7B /* ImageLoaderMock.swift in Sources */,
+				CF49C47521BD565C007E6B7B /* ImageLoaderTest.swift in Sources */,
+				CF49C46B21BD55EA007E6B7B /* doOrGoToPyaterochkaTests.swift in Sources */,
+				CF49C47721BD5798007E6B7B /* NetworkManagerMock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF992D3B219E0DD000E96ECB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFBBAA8621AAF533002BD2FB /* PhotoModel.swift in Sources */,
+				CF992D5E21A0BF9600E96ECB /* ConversationCell.swift in Sources */,
+				CF992D45219E0DD000E96ECB /* ProfileController.swift in Sources */,
+				CFBBAA8821AAF5E5002BD2FB /* UIImageView+Ext.swift in Sources */,
+				CF6F032D21A35A520056137D /* CoreDataModel.xcdatamodeld in Sources */,
+				CF992D6921A1E61E00E96ECB /* InputMessageCell.swift in Sources */,
+				CF33B91A21B3C31F00D674CD /* Peer+CoreDataProperties.swift in Sources */,
+				CF992D6121A1CB8900E96ECB /* UIView+Ext.swift in Sources */,
+				CF992D5A21A0BB8500E96ECB /* ConversationsController.swift in Sources */,
+				CF33B91621B3C0E200D674CD /* Protocols.swift in Sources */,
+				CF6F033121A35C6F0056137D /* Profile+CoreDataProperties.swift in Sources */,
+				CF992D43219E0DD000E96ECB /* AppDelegate.swift in Sources */,
+				CF6F031921A1FBD10056137D /* CoreDataManager.swift in Sources */,
+				CF33B92221B3C55C00D674CD /* Conversation.swift in Sources */,
+				CF33B91D21B3C3F400D674CD /* Message.swift in Sources */,
+				CF33B92621B4514900D674CD /* Animator.swift in Sources */,
+				CF33B91E21B3C3F400D674CD /* Message+CoreDataProperties.swift in Sources */,
+				CF6F033021A35C6F0056137D /* Profile.swift in Sources */,
+				CF6F031C21A1FD0B0056137D /* MultipeerManager.swift in Sources */,
+				CF6F031E21A1FD1C0056137D /* CommunicationService.swift in Sources */,
+				CFBBAA8421AAE452002BD2FB /* PhotoNetwork.swift in Sources */,
+				CF33B92321B3C55C00D674CD /* Conversation+CoreDataProperties.swift in Sources */,
+				CFBBAA8A21AAF63B002BD2FB /* PhotoCell.swift in Sources */,
+				CF992D6521A1DD3200E96ECB /* ChatController.swift in Sources */,
+				CF33B91921B3C31F00D674CD /* Peer+CoreDataClass.swift in Sources */,
+				CFBBAA8221AAD986002BD2FB /* PhotoController.swift in Sources */,
+				CF6F031721A1FB400056137D /* CoreDataStack.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF49C46E21BD55EA007E6B7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF992D3E219E0DD000E96ECB /* Chatex */;
+			targetProxy = CF49C46D21BD55EA007E6B7B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF992D46219E0DD000E96ECB /* Profile.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF992D47219E0DD000E96ECB /* Base */,
+			);
+			name = Profile.storyboard;
+			sourceTree = "<group>";
+		};
+		CF992D4B219E0DD100E96ECB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF992D4C219E0DD100E96ECB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF49C46F21BD55EA007E6B7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 47M342TKQP;
+				INFOPLIST_FILE = doOrGoToPyaterochkaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Spiralka.doOrGoToPyaterochkaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chatex.app/Chatex";
+			};
+			name = Debug;
+		};
+		CF49C47021BD55EA007E6B7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 47M342TKQP;
+				INFOPLIST_FILE = doOrGoToPyaterochkaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Spiralka.doOrGoToPyaterochkaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chatex.app/Chatex";
+			};
+			name = Release;
+		};
+		CF992D4F219E0DD100E96ECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF992D50219E0DD100E96ECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF992D52219E0DD100E96ECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 47M342TKQP;
+				INFOPLIST_FILE = "$(SRCROOT)/Chatex/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Spiralka.doOrGoToPyaterochka;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CF992D53219E0DD100E96ECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 47M342TKQP;
+				INFOPLIST_FILE = "$(SRCROOT)/Chatex/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Spiralka.doOrGoToPyaterochka;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF49C47121BD55EA007E6B7B /* Build configuration list for PBXNativeTarget "ChatexTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF49C46F21BD55EA007E6B7B /* Debug */,
+				CF49C47021BD55EA007E6B7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF992D3A219E0DD000E96ECB /* Build configuration list for PBXProject "Chatex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF992D4F219E0DD100E96ECB /* Debug */,
+				CF992D50219E0DD100E96ECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF992D51219E0DD100E96ECB /* Build configuration list for PBXNativeTarget "Chatex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF992D52219E0DD100E96ECB /* Debug */,
+				CF992D53219E0DD100E96ECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CF6F032B21A35A520056137D /* CoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CF6F032C21A35A520056137D /* CoreDataModel.xcdatamodel */,
+			);
+			currentVersion = CF6F032C21A35A520056137D /* CoreDataModel.xcdatamodel */;
+			path = CoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CF992D37219E0DD000E96ECB /* Project object */;
+}

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="160" id="KGk-i7-Jjw" customClass="InputMessageCell" customModule="doOrGoToPyaterochka" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="159.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="58v-Hl-OM2">
+                        <rect key="frame" x="18" y="11" width="240" height="138"/>
+                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="fbN-xY-UGD">
+                            <rect key="frame" x="0.0" y="0.0" width="240" height="138"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </view>
+                        <blurEffect style="dark"/>
+                    </visualEffectView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PIG-51-ANZ">
+                        <rect key="frame" x="18" y="11" width="240" height="138"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пони атакуют иллюминатов, Лавкрафт уже пролил тьму, берегись, Аннушка" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ei2-55-xSn">
+                                <rect key="frame" x="12" y="12" width="216" height="114"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ei2-55-xSn" firstAttribute="leading" secondItem="PIG-51-ANZ" secondAttribute="leading" constant="12" id="AwS-hd-e0P"/>
+                            <constraint firstAttribute="bottom" secondItem="ei2-55-xSn" secondAttribute="bottom" constant="12" id="U9e-2y-Gba"/>
+                            <constraint firstAttribute="trailing" secondItem="ei2-55-xSn" secondAttribute="trailing" constant="12" id="i59-p2-Q2j"/>
+                            <constraint firstItem="ei2-55-xSn" firstAttribute="top" secondItem="PIG-51-ANZ" secondAttribute="top" constant="12" id="tXU-f8-oNR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="58v-Hl-OM2" firstAttribute="height" secondItem="PIG-51-ANZ" secondAttribute="height" id="KjQ-rN-nT1"/>
+                    <constraint firstItem="58v-Hl-OM2" firstAttribute="width" secondItem="PIG-51-ANZ" secondAttribute="width" id="NHm-jm-uTx"/>
+                    <constraint firstItem="PIG-51-ANZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="Vlb-Dw-u3l"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="PIG-51-ANZ" secondAttribute="bottom" id="cRa-6M-5qA"/>
+                    <constraint firstItem="PIG-51-ANZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="dKi-lt-H9U"/>
+                    <constraint firstItem="58v-Hl-OM2" firstAttribute="centerX" secondItem="PIG-51-ANZ" secondAttribute="centerX" id="jeB-xR-4hD"/>
+                    <constraint firstItem="PIG-51-ANZ" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="3:4" id="mIM-Hg-jEf"/>
+                    <constraint firstItem="58v-Hl-OM2" firstAttribute="centerY" secondItem="PIG-51-ANZ" secondAttribute="centerY" id="xmz-Vn-caS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="blurEffect" destination="58v-Hl-OM2" id="U6T-22-UXF"/>
+                <outlet property="messageLabel" destination="ei2-55-xSn" id="4Xc-d9-Osw"/>
+                <outlet property="messageView" destination="PIG-51-ANZ" id="iRx-ws-FxB"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="193.4032983508246"/>
+        </tableViewCell>
+    </objects>
+</document>
