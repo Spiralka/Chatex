@@ -10,7 +10,6 @@ import UIKit
 
 class ConversationsController: UIViewController {
     
-    //TODO: Найти адекватный цвет для навигейшена, возможно сделать иконку стрелочки на ячейке чуть заметнее
     
     @IBOutlet weak var tableView: UITableView!
     

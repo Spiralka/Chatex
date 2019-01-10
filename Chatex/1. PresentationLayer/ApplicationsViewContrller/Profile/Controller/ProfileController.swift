@@ -18,7 +18,6 @@ class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINa
     }
     
    
-    //TODO:  Подумать куда можно запихнуть работу с анимацией, сделать сохранение в кордату
     
     @IBOutlet weak var editingButton: UIButton!
     @IBOutlet weak var aboutTextView: UITextView!
