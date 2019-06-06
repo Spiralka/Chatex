@@ -71,34 +71,12 @@ class ChatController: UIViewController {
     
     
     
-    @IBAction func lolkekPressed(_ sender: Any) {
-        
-        let originHeight = sendButton.frame.size.height
-        let originWidth = sendButton.frame.size.width
-        let originSizeFont = customTitleView.font
-        
-        UIView.animateKeyframes(withDuration: 0.5, delay: 0, options: [], animations: {
-            
-            UIView.addKeyframe(withRelativeStartTime: 0.0, relativeDuration: 0.5, animations: {
-                
-                self.sendButton.frame.size.height += self.sendButton.frame.size.height * 15.0 / 100.0
-                self.sendButton.frame.size.width += self.sendButton.frame.size.width * 15.0 / 100.0
-                self.customTitleView.font = self.customTitleView.font.withSize(24)
-                
-            })
-            UIView.addKeyframe(withRelativeStartTime: 0.25, relativeDuration: 0.5, animations: {
-                self.sendButton.frame.size.height = originHeight
-                self.sendButton.frame.size.width = originWidth
-                self.customTitleView.font = originSizeFont
-            })
-        }, completion: nil)
-        
-    }
+   
 }
 
 extension ChatController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 50
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

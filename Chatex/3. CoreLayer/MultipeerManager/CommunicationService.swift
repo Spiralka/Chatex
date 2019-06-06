@@ -13,6 +13,7 @@ class CommunicationService: CommunicationServiceDelegate {
     
     func communicationService(_ communicationService: ICommunicationService, didFoundPeer peer: Peer) {
         
+        
     }
     
     func communicationService(_ communicationService: ICommunicationService, didLostPeer peer: Peer) {

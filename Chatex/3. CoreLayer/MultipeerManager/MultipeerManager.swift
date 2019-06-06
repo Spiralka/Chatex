@@ -59,7 +59,6 @@ extension MultipeerManager: MCNearbyServiceBrowserDelegate {
     
     
     func browser(_ browser: MCNearbyServiceBrowser, foundPeer peerID: MCPeerID, withDiscoveryInfo info: [String : String]?) {
-        print("I FOUND \(info, peerID)")
         browser.invitePeer(peerID, to: session, withContext: nil, timeout: 10)
         browser.stopBrowsingForPeers()
     }

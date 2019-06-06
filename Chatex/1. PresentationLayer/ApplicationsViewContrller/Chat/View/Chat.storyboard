@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1NW-x8-G4a">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1NW-x8-G4a">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +13,7 @@
         <!--Chat Controller-->
         <scene sceneID="irl-ZN-UXp">
             <objects>
-                <viewController storyboardIdentifier="ChatVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="846-92-3Dy" customClass="ChatController" customModule="doOrGoToPyaterochka" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChatVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="846-92-3Dy" customClass="ChatController" customModule="Chatex" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7dz-1b-c8Y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,25 +44,13 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85Z-qp-Tk9">
-                                <rect key="frame" x="159.5" y="593" width="56" height="30"/>
-                                <color key="backgroundColor" red="0.76144152880000004" green="0.2905555964" blue="0.29801791909999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="LOLKEK">
-                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="lolkekPressed:" destination="846-92-3Dy" eventType="touchUpInside" id="PGf-Hm-S8q"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="5Wk-Il-cv1" firstAttribute="top" secondItem="85Z-qp-Tk9" secondAttribute="bottom" id="5hE-Hq-lAv"/>
                             <constraint firstItem="LQu-2Q-aVG" firstAttribute="trailing" secondItem="yQH-ih-aRc" secondAttribute="trailing" id="B0L-w4-2fr"/>
                             <constraint firstItem="LQu-2Q-aVG" firstAttribute="bottom" secondItem="5Wk-Il-cv1" secondAttribute="bottom" id="EqZ-4p-NqD"/>
                             <constraint firstItem="vAY-0m-rp4" firstAttribute="leading" secondItem="5Wk-Il-cv1" secondAttribute="trailing" id="Ihz-Vx-zso"/>
                             <constraint firstItem="5Wk-Il-cv1" firstAttribute="leading" secondItem="LQu-2Q-aVG" secondAttribute="leading" constant="8" id="ZOM-dp-q1Z"/>
-                            <constraint firstItem="85Z-qp-Tk9" firstAttribute="centerX" secondItem="7dz-1b-c8Y" secondAttribute="centerX" id="a5o-4a-zdf"/>
                             <constraint firstItem="yQH-ih-aRc" firstAttribute="leading" secondItem="LQu-2Q-aVG" secondAttribute="leading" id="cJM-Ze-2cc"/>
                             <constraint firstItem="LQu-2Q-aVG" firstAttribute="trailing" secondItem="vAY-0m-rp4" secondAttribute="trailing" id="h3d-pk-iO5"/>
                             <constraint firstItem="vAY-0m-rp4" firstAttribute="top" secondItem="yQH-ih-aRc" secondAttribute="bottom" id="mbM-ot-Gau"/>
